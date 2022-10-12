@@ -24,8 +24,15 @@
 student_1 = {
     "key": "values",
     "name": "Zakariya",
-    "stream": "DevOps",
-    "completed_lessons": 4,
-    "completed_lessons_names": ["Lists", "tuples", "OOP"]
+    "stream": "DevOps"
 
-    for number
+
+}
+for key in student_1:
+    print(key)
+values = student_1.values()
+print(values)
+for key in student_1:
+    if key in student_1:
+        print(key, student_1[key])
+

@@ -24,14 +24,23 @@
 # universal
 # pg
 # 12a
-# 15 & abvoe
+# 15 & above
 # if nothing matches inform the user to enter their age again
 # user must not be allowed to enter age over 117 years
 
 print("Hello!, Welcome to Sparta Cinema")
-print("To watch the movie,you must input you age category - universal, pg, 12a, 15 & above, 16 & above, 18 & above")
-age = input()
-print(age)
+age = int(input("Enter your age: "))
 
-if age == "18 & above":
-    print("Enjoy the movie!")
+if age >= 18:
+    print("Enjoy the  18 plus movie!")
+elif age >= 16:
+    print("Enjoy the 16 plus movie!")
+elif age >= 15:
+    print("Enjoy the 15 plus movie!")
+elif age >= 12:
+    print("Enjoy the 12 plus movie!")
+elif age >= 117:
+    print("Your age must be under 117")
+
+else:
+    print("Error, please try again :( ")
