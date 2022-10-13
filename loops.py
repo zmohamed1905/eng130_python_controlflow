@@ -34,12 +34,12 @@ def keys_and_values(dictionary):
     for key in dictionary:
         print(key)
 
-    values = list(dictionary.values())
-    print(values)
-
-    for key in dictionary:
-        if key in dictionary:
-            print(key, dictionary[key])
+    # values = list(dictionary.values())
+    # print(values)
+    #
+    # for key in dictionary:
+    #     if key in dictionary:
+        print(dictionary[key])
 
 
 
