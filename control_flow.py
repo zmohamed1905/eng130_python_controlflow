@@ -31,16 +31,20 @@
 print("Hello!, Welcome to Sparta Cinema")
 age = int(input("Enter your age: "))
 
-if age >= 18:
-    print("Enjoy the  18 plus movie!")
-elif age >= 16:
-    print("Enjoy the 16 plus movie!")
-elif age >= 15:
-    print("Enjoy the 15 plus movie!")
-elif age >= 12:
-    print("Enjoy the 12 plus movie!")
-elif age >= 117:
-    print("Your age must be under 117")
+# Updated DEF Movie Rating
+def movie_rating(age):
+    if age > 117:
+        print("Your age must be under 117, please try again ")
+    elif age >= 18:
+        print("Enjoy the  18 plus movie!")
+    elif age >= 16:
+        print("Enjoy the 16 plus movie!")
+    elif age >= 15:
+        print("Enjoy the 15 plus movie!")
+    elif age >= 12:
+        print("Enjoy the 12 plus movie!")
+    else:
+        print("Error, please try again :( ")
 
-else:
-    print("Error, please try again :( ")
+    return f"Your age is {age}"
+print(movie_rating(age))

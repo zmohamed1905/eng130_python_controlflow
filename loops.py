@@ -21,18 +21,34 @@
 # print all the values
 # print key with matching value
 
+# for key in student_1:
+#     print(key)
+# values = student_1.values()
+# print(values)
+# for key in student_1:
+#     if key in student_1:
+#         print(key, student_1[key])
+def keys_and_values(dictionary):
+
+
+    for key in dictionary:
+        print(key)
+
+    values = list(dictionary.values())
+    print(values)
+
+    for key in dictionary:
+        if key in dictionary:
+            print(key, dictionary[key])
+
+
+
+
 student_1 = {
     "key": "values",
     "name": "Zakariya",
     "stream": "DevOps"
-
-
 }
-for key in student_1:
-    print(key)
-values = student_1.values()
-print(values)
-for key in student_1:
-    if key in student_1:
-        print(key, student_1[key])
+
+keys_and_values(student_1)
 
